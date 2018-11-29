@@ -1,0 +1,228 @@
+body {
+
+   
+    // background-color: rgb(3, 3, 3);
+    background-color: #e0e0e0;
+    transition-delay: 2s;
+    font-family: 'Roboto', sans-serif;
+    z-index: 1;
+}
+.form-control {
+    font-size: 16px;
+    transition: all 0.4s;
+    box-shadow: none;
+    width: 100%;
+    padding: .5rem 1rem;
+    border-radius: 2px !important; 
+
+}
+.form-control:focus {
+    border-color: #5cb85c;
+    text-align: center;
+    font-size:34px;
+    margin: 10px 0 15px;
+}
+.form-control, .btn {
+    border-radius: 50px;
+    outline: none !important;
+}
+
+h1 {
+    color:#fff;
+}
+
+h2 {
+    color:#fff;
+}
+.signup-form {
+    width: 480px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.signup-form form {
+    border-radius: 5px;
+    margin-bottom: 20px;
+    /* background: rgb(26, 26, 27); */
+    background-color: rgba(26, 26, 27, 0.8);
+    color: rgb(129, 131, 132);
+    border-color: rgb(52, 53, 54);
+    border-style: solid;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    margin-top:100px;
+}
+.signup-form a {
+    /* color: #5cb85c; */
+    color:#fff;
+    margin-left: 0px;
+}    
+.signup-form h2 {
+    text-align: center;
+    font-size: 34px;
+    /* margin: 10px 0 15px; */
+    color:#fff;
+}
+.signup-form .hint-text {
+    color: #999;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 50px !important;
+}
+.signup-form .form-group {
+    margin-bottom: 10px;
+}
+.signup-form .btn {        
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.login-h2 {
+    margin-bottom:50px
+}
+#login-h2 {
+    margin-bottom:20px
+}
+
+#login-row {
+    margin-top:12px;
+}
+
+#password {
+    margin-bottom:10px;
+}
+
+.signup-form h1 {
+    text-align: center;
+    font-size: 34px;
+    margin: 10px 0 15px;
+    text-align: center;
+    color:#fff;
+}
+.signup-btn {
+    text-align: center;
+    border-color: #5cb85c;
+    transition: all 0.4s;
+}
+.signup-btn:hover {
+    background: #5cb85c;
+    opacity: 0.8;
+}
+
+input[type="email"] {
+    background-color: #fff;
+    color:#fff;
+}
+
+.center-text {
+    color:white;
+    font-family: 'Lato', sans-serif;
+}
+#reset-form,#reset-form-1,#reset-form-2{
+    border-radius: 2px;
+    font-size:17px;
+    background-color: #28a745;
+    border-color: #28a745;
+    text-align: center;
+}
+#home-icon {
+    width: 70px;
+    height: 70px;
+    margin-left:150px;
+    margin-bottom: 20px;
+    margin-top:0px;
+}
+.or-seperator {
+    margin: 50px 0 15px;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+}
+.or-seperator b {
+    padding: 0 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    background: #fff;
+    display: inline-block;
+    border: 1px solid #e0e0e0;
+    border-radius: 50%;
+    position: relative;
+    top: -22px;
+    z-index: 1;
+}
+.social-btn .btn {
+    color: #fff;
+    margin: 10px 0 0 15px;
+    font-size: 15px;
+    border-radius: 50px;
+    font-weight: normal;
+    border: none;
+    transition: all 0.4s;
+}	
+.social-btn .btn:first-child {
+    margin-left: 0;
+}
+.social-btn .btn:hover {
+    opacity: 0.8;
+}
+.social-btn .btn-primary {
+    background: #507cc0;
+}
+.social-btn .btn-info {
+    background: #64ccf1;
+}
+.social-btn .btn-danger {
+    background: #df4930;
+}
+.social-btn .btn i {
+    float: left;
+    margin: 3px 10px;
+    font-size: 20px;
+}
+.text-center {
+    color:white;
+    font-family: 'Lato', sans-serif;
+}
+
+#reset-form,#reset-form-1,#reset-form-2{
+    border-radius: 2px;
+}
+.btn-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    margin-top:20px;
+}
+.btn-block {
+    display: block;
+    width: 100%;
+}
+.btn-group-lg>.btn, .btn-lg {
+    padding: .5rem 1rem; 
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem; 
+}
+.was-validated .form-control:valid ~ .invalid-feedback {
+  display: none;
+    }
+    
+input.active:valid {
+  box-shadow: 0 0 5px 1px green;
+    }
+    
+input.active:invalid {
+      box-shadow: 0 0 5px 1px red;
+    }
+input {
+    margin-bottom: 5px;
+}
+    
+.error {
+      color: red;
+      font-size: 12px;
+      margin-top: 5px;
+}
