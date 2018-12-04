@@ -2,7 +2,10 @@
 .title {
     margin-left: 18%;
     color: #fff;
+<<<<<<< HEAD
     font-weight: 900;
+=======
+>>>>>>> Add Heroku generated app.json
     width: 200px;
     padding-left: 10px;
     padding-right: 10px;
@@ -24,6 +27,7 @@
 
 
 .article-column {
+<<<<<<< HEAD
   padding-left: 50px;
   padding-right:50px;
   background: #fff;
@@ -47,6 +51,13 @@
   &:nth-child(4n+4){
      width: 300px;
   }
+=======
+    background: #fff;
+    -webkit-column-break-inside: avoid;
+    margin-bottom: 10px;
+    padding-left: 7px;
+    padding-bottom: 10px;
+>>>>>>> Add Heroku generated app.json
 }
 
 /*  On large screens */
@@ -108,12 +119,16 @@
       padding-left: 120px;
       padding-right: 90px;
     }
+    .user-button {
+      margin-left:0px;
+    }
   }
 
   @media only screen and (max-width: 647px) and (min-width: 320px) {
     .title {
         margin-left:40px;
     }
+<<<<<<< HEAD
     
     .pic-container{
       display: flex;
@@ -131,18 +146,36 @@
     }
     .user-button {
       left:0px;
+=======
+    .pic-container {
+      column-count: 1;
+
+    }
+    .user-button {
+      margin-left:0px;
+>>>>>>> Add Heroku generated app.json
     }
   }
 
   .entry-date {
     color: #fff;
+<<<<<<< HEAD
+=======
+    // background-color: #28a745;
+    // border-color: #28a745;
+>>>>>>> Add Heroku generated app.json
     background-color: #8A908A;
     border-radius: 7px;
     padding-left: 10px;
     padding-right: 10px;
+<<<<<<< HEAD
     padding-bottom: 0px;
     padding-top: 0px;
     margin-bottom: 10px;
+=======
+    padding-bottom: 7px;
+    padding-top: 3px;
+>>>>>>> Add Heroku generated app.json
   }
 
   .view-button {
@@ -172,9 +205,18 @@
 .example_a {
   color: #fff !important;
   text-decoration: none;
+<<<<<<< HEAD
   background-color: #CA3D2E;
   padding: 5px;
   border-radius: 5px;
+=======
+  // text-transform: uppercase;
+  // background: #ed3330;
+  background-color: #CA3D2E;
+  padding: 5px;
+  border-radius: 5px;
+  // display: inline-block;
+>>>>>>> Add Heroku generated app.json
   border: none;
   margin-left: 5px;
   text-decoration:none;
@@ -196,7 +238,11 @@
   }
 
   .user-button {
+<<<<<<< HEAD
     margin-left: 73%;
+=======
+    margin-left:79%;
+>>>>>>> Add Heroku generated app.json
     margin-right:5px;
     border-radius:5px;
     background-color: #464956;
@@ -210,6 +256,7 @@
   .modal-content {
     margin-top:30%;
   }
+<<<<<<< HEAD
   #cardlink {
     background-color: #A6A5A5;
     color: #fff;
@@ -249,6 +296,8 @@
     background: #111;
     border-radius: 7px;
   }
+=======
+>>>>>>> Add Heroku generated app.json
 
 
 
