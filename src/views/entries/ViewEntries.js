@@ -37,8 +37,22 @@ export const EntryCard = entry => (
         </h5>
         <br />
       </div>
-      <time class="entry-date">{entry.date_created}</time>
+
+      <div class="buttons">
+        <div class="float-left">
+        <time class="entry-date d-inline">{entry.date_created}</time>
+        </div>
+        
+        <div class="float-right">
+          <button class="d-inline view-button">View</button>
+          <button class="d-inline edit-button">Edit</button>
+          <button class="d-inline delete-button">Delete</button>
+        </div>
+        
+      </div>
+      {/* <time class="entry-date">{entry.date_created}</time> */}
       <br />
     </div>
+    
   </div>
 );
