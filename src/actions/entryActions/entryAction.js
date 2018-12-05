@@ -8,7 +8,6 @@ export const retrieveAllEntries = () => dispatch => {
     return axios
         .get(RETRIEVE_ALL, headers())
         .then(res => {
-            console.log("jhgfffffff",res.data)
             const getallentries = {
                 type: ENTRIES.GET_DIARY_ENTRIES,
                 payload: res.data
@@ -23,18 +22,20 @@ export const retrieveAllEntries = () => dispatch => {
 
 export const deleteDiaryEntry = id => dispatch => {
     return axios
-        .delete(RETRIEVE_ALL + `${id}`, headers())
+        .delete(RETRIEVE_ALL + `/${id}`, headers())
         .then(res => {
-            toast.success(res.data.Message, {
+            console.log("deleteAction",res.data)
+            toast.success(res.data.message, {
                 autoClose: 3500,
                 hideProgressBar: true
             });
             dispatch({
-                type: ENTRIES.DELETE_SIGNLE_ENTRY,
+                type: ENTRIES.DELETE_SINGLE_ENTRY,
                 payload: res.data
             });
         })
         .catch(error => {
+            console.log("deleteAction no",error.data)
             toast.error(error, {autoClose: 3500, hideProgressBar: true})
         });
 };

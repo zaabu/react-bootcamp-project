@@ -4,12 +4,17 @@ const initialState = {
   entries: [],
   entry: {},
   deleted: {},
-  modified:{}
+  modified:{},
+  
 };
 
 const entriesReducer = (state = initialState, action) => {
   switch (action.type) {
-  
+  case ENTRIES.CREATE_DIARY_ENTRY:
+    return {
+      ...state,
+      entry: action.payload
+    }
   case ENTRIES.GET_DIARY_ENTRIES:
     return {
       ...state,
