@@ -43,7 +43,7 @@ const CreateEntryView = ({
                              type="text"
                              name="title"
                              id="title"
-                             placeholder="enter entry title.."
+                             placeholder="Enter entry title.."
                              onChange={handleChange}
                              value={title}
                              required
@@ -56,7 +56,7 @@ const CreateEntryView = ({
                              type="textarea"
                              name="body"
                              id="body"
-                             placeholder="enter entry body.."
+                             placeholder="Enter entry body.."
                              onChange={handleChange}
                              value={body}
                              required

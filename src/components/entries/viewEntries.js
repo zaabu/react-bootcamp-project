@@ -18,14 +18,14 @@ export class ViewEntries extends Component {
     console.log("fgdfg",nextProps);
     if (
       nextProps.entry.message === "diary entry added successfully." ||
-      nextProps.deleted.message === "Diary entry deleted successfully"
+      nextProps.deleted.message === "Diary entry deleted successfully" ||
+      nextProps.modified.message === "diary entry updated succesfully"
     ){
       this.props.dispatch(retrieveAllEntries())
     }
   }
 
   handleDelete = id => {
-    // console.log("yes im here")
     this.props.dispatch(deleteDiaryEntry(id));
   }
 
@@ -38,7 +38,7 @@ export class ViewEntries extends Component {
     
     return (
       <div>
-        <h1 class="title d-inline">DIARY</h1>
+        <h1 class="title d-inline">MY DIARY</h1>
        
         
         <CreateDiaryEntryComponent />
@@ -57,7 +57,8 @@ ViewEntries.propTypes = {
   allentries: PropTypes.array,
   entry: PropTypes.object,
   deleted: PropTypes.object,
-  Message: PropTypes.string,
+  message: PropTypes.string,
+  modified: PropTypes.object
 
 
 };
@@ -67,6 +68,7 @@ const mapStateToProps = state => ({
   allentries: state.entriesReducer.entries,
   entry: state.entriesReducer.entry,
   deleted: state.entriesReducer.deleted,
+  modified: state.entriesReducer.modified
   
 });
 const mapDispatchToProps = dispatch => ({ dispatch });
