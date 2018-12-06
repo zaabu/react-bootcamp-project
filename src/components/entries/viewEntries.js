@@ -73,6 +73,7 @@ const mapStateToProps = state => ({
 });
 const mapDispatchToProps = dispatch => ({ dispatch });
 
+export { ViewEntries as ViewDiariesTest }
 export default connect(
   mapStateToProps,
   mapDispatchToProps
