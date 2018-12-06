@@ -1,8 +1,11 @@
+$bg-color: #507354;
+
 body {
 
    
     // background-color: rgb(3, 3, 3);
-    background-color: #e0e0e0;
+    // background-color: #e0e0e0;
+    background-color: $bg-color;
     transition-delay: 2s;
     font-family: 'Roboto', sans-serif;
     z-index: 1;
