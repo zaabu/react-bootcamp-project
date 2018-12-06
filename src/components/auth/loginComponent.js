@@ -15,6 +15,7 @@ export class Login extends Component {
     console.log(this.props.user.isLoggedIn);
     return (
       <Fragment>
+        
         <LoginForm submit={this.handleValidSubmit} />
       </Fragment>
     );

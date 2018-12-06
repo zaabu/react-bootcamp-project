@@ -42,9 +42,10 @@ export const deleteDiaryEntry = id => dispatch => {
 
 export const updateDiaryEntry = (id, data) => dispatch => {
     return axios 
-        .put(RETRIEVE_ALL + `${id}`, headers())
+        .put(RETRIEVE_ALL + `/${id}`, data, headers())
         .then(res => {
-            toast.success(res.data.Message, {
+            console.log("updateme", res.data)
+            toast.success(res.data.message, {
                 autoClose: 3500,
                 hideProgressBar: true
             });
@@ -54,7 +55,7 @@ export const updateDiaryEntry = (id, data) => dispatch => {
             });
         })
         .catch(error => {
-            toast.error("Failed to update entry", {
+            toast.error(error.message, {
               autoClose: 5000,
               hideProgressBar: true
             });
@@ -76,7 +77,7 @@ export const createDiaryEntry = data => dispatch => {
             });
         })
         .catch(error => {
-            toast.error("Failed to create diary entry, please check your fields", {
+            toast.error(error.message, {
                 autoClose: 3500,
                 hideProgressBar: true
             });

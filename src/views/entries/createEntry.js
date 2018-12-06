@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "../../assets/entryAssets/entrypage.scss";
+import { clearToken } from "../../utils/myHeaders";
 
 import {
     Button,
@@ -25,11 +26,11 @@ const CreateEntryView = ({
 }) => {
     return (
         <div>
-            <a target="_blank" onClick={toggle}>
-                <Button className="user-button">
+            <a target="_blank" >
+                <Button className="user-button" onClick={toggle}>
                     Create
                 </Button>
-                <Button className="user-button2">
+                <Button className="user-button2" href="/" onClick={() => clearToken()}>
                     Log Out
                 </Button>
             </a>
@@ -43,7 +44,7 @@ const CreateEntryView = ({
                              type="text"
                              name="title"
                              id="title"
-                             placeholder="enter entry title.."
+                             placeholder="Enter entry title.."
                              onChange={handleChange}
                              value={title}
                              required
@@ -56,7 +57,7 @@ const CreateEntryView = ({
                              type="textarea"
                              name="body"
                              id="body"
-                             placeholder="enter entry body.."
+                             placeholder="Enter entry body.."
                              onChange={handleChange}
                              value={body}
                              required
@@ -74,8 +75,6 @@ const CreateEntryView = ({
             </Modal>
 
         </div>
-
-
     );
 };
 

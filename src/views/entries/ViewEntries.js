@@ -2,6 +2,8 @@ import React from "react";
 import "../../assets/entryAssets/entrypage.scss";
 import PropTypes from "prop-types";
 import DeleteEntryConfirm from "../../components/entries/deleteDiaryEntry";
+import EditEntryModal from "../../components/entries/editDiaryEntry"
+import ViewEntry from "../../components/entries/viewDiary";
 
 const Viewallentries = ({ results, handleDelete }) => {
   const showEntries = results.map(entry => (
@@ -23,8 +25,8 @@ export default Viewallentries;
 
 
 function entriesView(entry, handleDelete) {
-  return <div className="article-column">
-
+  return <div className="article-column" key={entry.id}>
+    {/* {entry.title} {" "} */}
     <div className="entry-info">
       <br />
       <header className="entry-header">
@@ -41,14 +43,28 @@ function entriesView(entry, handleDelete) {
       </div>
 
       <div class="buttons">
-        <div class="float-left">
-          <time class="entry-date d-inline">{entry.date_created}</time>
+        <div>
+          <time class="d-inline float-left entry-date">{entry.date_created}</time>
         </div>
 
-        <div class="float-right">
-          <button class="d-inline view-button">View</button>
-          <button class="d-inline edit-button">Edit</button>
-          <DeleteEntryConfirm delete={handleDelete} uniqueId={entry.id} />
+        <div className="d-inline float-right">
+          {/* <button class="d-inline view-button">View</button> */}
+          {/* <button class="d-inline edit-button">Edit</button> */}
+          <ViewEntry 
+            title={entry.title}
+            body={entry.body}
+            date_created = {entry.date_created}
+            date_modified = {entry.date_modified}
+          />
+          <EditEntryModal
+            uniqueId={entry.id}
+            title={entry.title}
+            body={entry.body}
+          />
+          <DeleteEntryConfirm 
+            delete={handleDelete} 
+            uniqueId={entry.id} 
+          />
         </div>
       </div>
 
@@ -57,4 +73,11 @@ function entriesView(entry, handleDelete) {
 
   </div>;
 }
+
+Viewallentries.propTypes = {
+  results: PropTypes.array,
+  handleDelete: PropTypes.func
+};
+
+// export default Viewallentries;
 

@@ -71,7 +71,7 @@ const mapStateToProps = state => ({
 
 });
 
-//import this Component
+export {CreateDiaryEntryComponent as CreateEntryModalTest};
 export default connect(
     mapStateToProps,
     mapDispatchToProps
