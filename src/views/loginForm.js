@@ -8,8 +8,10 @@ import "../assets/form.scss"
 const LoginForm = props => (
  
   <div className="signup-form">
+      
       <AvForm onValidSubmit={props.submit}>
       {/* <img  id="home-icon" src={logo} alt="home" /> */}
+      
       <h2 className="login-h2">Log In to your Account</h2>
       
       <AvField 

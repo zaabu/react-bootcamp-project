@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { confirmAlert } from "react-confirm-alert";
 import "react-confirm-alert/src/react-confirm-alert.css";
-import { CardLink } from "reactstrap";
 
 
 class DeleteEntryConfirm extends Component {
@@ -23,7 +22,7 @@ class DeleteEntryConfirm extends Component {
     };
 
     render() {
-        return <button className="d-inline delete-button" onClick={this.submit} href="#">Delete</button>
+        return <button id="danger-button" type="button" class="btn btn-danger"  onClick={this.submit} href="#">Delete</button>
     }
 
     
