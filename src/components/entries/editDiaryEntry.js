@@ -70,8 +70,9 @@ class EditEntryModal extends React.Component {
   const mapStateToProps = state => ({
     modified : state.entriesReducer.modified
   });
-//   export {EditEntryModal as EditEntryModalTest};
-  export default connect(
+
+export {EditEntryModal as EditEntryModalTest};
+export default connect(
     mapStateToProps,
     mapDispatchToProps
-  )(EditEntryModal);
+)(EditEntryModal);
