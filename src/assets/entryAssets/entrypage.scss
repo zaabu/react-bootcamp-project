@@ -18,7 +18,7 @@
     flex-flow: column wrap;
     max-height: 800px;
     margin-left: 11%; /* Adjustment for the gutter */
-
+  
 }
 
 
@@ -32,7 +32,21 @@
   margin: 0 20px 20px 0; /* Some gutter */
   padding-bottom: 10px;
   border-radius: 2px;
+}
 
+.article-column {
+  &:nth-child(4n+1){
+     width: 300px;
+  }
+  &:nth-child(4n+2){
+     width: 300px;
+  }
+  &:nth-child(4n+3){
+     width: 300px;
+  }
+  &:nth-child(4n+4){
+     width: 300px;
+  }
 }
 
 
@@ -125,24 +139,6 @@
       padding-left: 120px;
       padding-right: 90px;
     }
-
-    .user-button {
-      margin-left:0px;
-    }
-    .pic-container{
-      display: flex;
-      flex-wrap: nowrap;
-      display: flex;
-      -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      width: 100%;
-      padding-left: 120px;
-      padding-right: 90px;
-    }
   }
 
   @media only screen and (max-width: 647px) and (min-width: 320px) {
@@ -167,17 +163,6 @@
     .user-button {
       left:0px;
     }
-    .pic-container {
-      column-count: 1;
-
-    }
-    .user-button {
-      margin-left:0px;
-    }
-    .user-button {
-      left:0px;
-
-    }
   }
 
   .entry-date {
@@ -189,12 +174,15 @@
     padding-bottom: 0px;
     padding-top: 0px;
     margin-bottom: 10px;
-    padding-bottom: 7px;
-    padding-top: 3px;
-    padding-bottom: 0px;
-    padding-top: 0px;
-    margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+  }
 
+  .entry-title {
+    font-family: 'Open Sans', sans-serif;
+  }
+  .entry-description {
+    font-family: 'Lato', sans-serif;
+    font-size:19px;
   }
 
   .view-button {
@@ -227,16 +215,6 @@
   background-color: #CA3D2E;
   padding: 5px;
   border-radius: 5px;
-
-  // text-transform: uppercase;
-  // background: #ed3330;
-  background-color: #CA3D2E;
-  padding: 5px;
-  border-radius: 5px;
-  background-color: #CA3D2E;
-  padding: 5px;
-  border-radius: 5px;
-
   border: none;
   margin-left: 5px;
   text-decoration:none;
@@ -272,7 +250,6 @@
   .modal-content {
     margin-top:30%;
   }
-
   #cardlink {
     background-color: #A6A5A5;
     color: #fff;
@@ -315,10 +292,3 @@
 
 
 
-
-
-
-
-
-
-  
