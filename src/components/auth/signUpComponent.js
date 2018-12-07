@@ -42,6 +42,7 @@ const mapStateToProps = state => ({
   token: state.userReducer.user.Token,
   error: state.userReducer.error
 });
+export { Signup as SignupTest }
 export default connect(
   mapStateToProps,
   { SignUpAction, Loading, loginAction }

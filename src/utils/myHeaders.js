@@ -10,3 +10,7 @@ export const headers=() =>{
     headers: { Authorization: `Bearer ${AUTHENTICATED}` }
   };
 };
+export const clearToken=() =>{
+  localStorage.clear();
+};
+
