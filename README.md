@@ -2,7 +2,6 @@
 [![Coverage Status](https://coveralls.io/repos/github/zaabu/react-bootcamp-project/badge.svg?branch=develop)](https://coveralls.io/github/zaabu/react-bootcamp-project?branch=develop)
 
 
-# Introduction
 
 * **My Diary** is an online journal where users can pen down their thoughts and feelings.  
 
