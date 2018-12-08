@@ -28,8 +28,12 @@ describe("SignupUser component", () => {
   it("component should render correctly", () => {
     expect(wrapper).toMatchSnapshot();
   });
-  // it("should set state when handle change is called", () => {
-  //   wrapper.instance().handleChange(getEvent("name", "johnson"));
-  //   expect(wrapper.state().name).toBeUndefined;
-  // });
+  it("should set state when handle change is called", () => {
+    wrapper.instance().handleChange(getEvent("name", "johnson"));
+    expect(wrapper.state().name).toBeUndefined;
+  });
+  it("component should have toggle called", () => {
+    const mySpy = jest.spyOn(wrapper.instance(), "modalClose");
+    expect(mySpy).toHaveBeenCalledTimes(0);
+  });
 });

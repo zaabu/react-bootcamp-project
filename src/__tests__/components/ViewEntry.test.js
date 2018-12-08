@@ -25,4 +25,5 @@ describe("SignupUser component", () => {
   it("should render correctly", () => {
     expect(wrapper).toMatchSnapshot();
   });
+  
 });
