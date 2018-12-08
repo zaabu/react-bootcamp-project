@@ -2,7 +2,7 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/db3bbc7fb27ebce9befc/test_coverage)](https://codeclimate.com/github/zaabu/react-bootcamp-project/test_coverage)
 
 
-
+# MY DIARY REACT
 
 * **My Diary** is an online journal where users can pen down their thoughts and feelings.  
 

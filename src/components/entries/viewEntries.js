@@ -15,7 +15,6 @@ export class ViewEntries extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    console.log("fgdfg",nextProps);
     if (
       nextProps.entry.message === "diary entry added successfully." ||
       nextProps.deleted.message === "Diary entry deleted successfully" ||
@@ -38,7 +37,7 @@ export class ViewEntries extends Component {
     
     return (
       <div>
-        <h1 class="title d-inline">MY DIARY</h1>
+        {/* <h1 class="title d-inline">MY DIARY</h1> */}
        
         
         <CreateDiaryEntryComponent />

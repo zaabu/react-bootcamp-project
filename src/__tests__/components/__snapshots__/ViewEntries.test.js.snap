@@ -44,11 +44,6 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h1
-          class="title d-inline"
-        >
-          MY DIARY
-        </h1>,
         <Connect(CreateDiaryEntryComponent) />,
         <Viewallentries
           handleDelete={[Function]}
@@ -57,18 +52,6 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "MY DIARY",
-          "class": "title d-inline",
-        },
-        "ref": null,
-        "rendered": "MY DIARY",
-        "type": "h1",
-      },
       Object {
         "instance": null,
         "key": undefined,
@@ -100,11 +83,6 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h1
-            class="title d-inline"
-          >
-            MY DIARY
-          </h1>,
           <Connect(CreateDiaryEntryComponent) />,
           <Viewallentries
             handleDelete={[Function]}
@@ -113,18 +91,6 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "MY DIARY",
-            "class": "title d-inline",
-          },
-          "ref": null,
-          "rendered": "MY DIARY",
-          "type": "h1",
-        },
         Object {
           "instance": null,
           "key": undefined,
