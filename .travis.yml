@@ -1,10 +1,12 @@
 language: node_js
+
 node_js:
   - "8"
   - "10"
+
 addons:
     code_climate:
-        repo_token: $secret_key
+        repo_token: "33561e1ab6e50fd2701dba3d0a52b6cd7b1d459d88733d783522083afadbfab2"
 env:
   matrix:
   - REACT=16.6
@@ -12,16 +14,10 @@ sudo: false
 
 before_script:
   - npm install -g codeclimate-test-reporter
-
+  
 script:
   - npm run test
-  
-after_script:
-  - COVERALLS_REPO_TOKEN=$coveralls_repo_token npm run coveralls
 
 after_success:
   - npm run coverage
   - codeclimate-test-reporter < ./coverage/lcov.info
-
-
-
