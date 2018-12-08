@@ -1,9 +1,8 @@
-// $bg-color: #507354;
-
 body {
 
     background-color: #e0e0e0;
-    background-image: url("https://cdn.hipwallpaper.com/i/87/22/QLkcbW.jpg");
+    // background-color: purple;
+    // border-color: rgba(85, 0, 100, 0.7);
     transition-delay: 2s;
     font-family: 'Roboto', sans-serif;
     z-index: 1;
@@ -39,29 +38,39 @@ h2 {
     width: 480px;
     margin: 0 auto;
     padding: 10px 0;
+    
+}
+.form-container {
+    background-color: purple;
+    border-color: rgba(85, 0, 100, 0.7);
+    height:1000px;
+    background-image: url("https://cdn.hipwallpaper.com/i/33/48/X2uA4q.png");
 }
 .signup-form form {
     border-radius: 5px;
     margin-bottom: 20px;
     /* background: rgb(26, 26, 27); */
-    background-color: rgba(26, 26, 27, 0.8);
+    // background-color: rgba(26, 26, 27, 0.8);
+    background-color: #e0e0e0;
     color: rgb(129, 131, 132);
-    border-color: rgb(52, 53, 54);
-    border-style: solid;
+    // border-color: rgb(52, 53, 54);
+    // border-style: solid;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
     padding: 40px;
     margin-top:100px;
 }
 .signup-form a {
     /* color: #5cb85c; */
-    color:#fff;
+    // color:#fff;
+    color:#111;
     margin-left: 0px;
 }    
 .signup-form h2 {
     text-align: center;
     font-size: 34px;
     /* margin: 10px 0 15px; */
-    color:#fff;
+    // color:#fff;
+    color:#111;
 }
 .signup-form .hint-text {
     color: #999;
@@ -103,11 +112,15 @@ h2 {
 }
 .signup-btn {
     text-align: center;
-    border-color: #5cb85c;
+    // border-color: #5cb85c;
+    background-color: purple;
+    border-color: rgba(85, 0, 100, 0.7);
     transition: all 0.4s;
 }
 .signup-btn:hover {
-    background: #5cb85c;
+    // background: #5cb85c;
+    background-color: purple;
+    border-color: rgba(85, 0, 100, 0.7);
     opacity: 0.8;
 }
 
@@ -193,8 +206,10 @@ input[type="email"] {
 }
 .btn-success {
     color: #fff;
-    background-color: #28a745;
-    border-color: #28a745;
+    // background-color: #28a745;
+    // border-color: #28a745;
+    background-color: purple;
+    border-color: rgba(85, 0, 100, 0.7);
     margin-top:20px;
 }
 .btn-block {

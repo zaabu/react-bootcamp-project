@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+
 import {
   Modal,
   ModalHeader,
@@ -43,10 +44,10 @@ import {
           </ModalHeader>
           <ModalBody>{this.props.body}</ModalBody>
           <ModalFooter>
-            <Badge color="warning" className="float-left">
+            <Badge  className="pull-right float-left">
               Date Created - {this.props.date_created}
             </Badge>{" "}
-            <Badge color="info" className="float-left">
+            <Badge  className="pull-right float-left">
               Last Modified - {this.props.date_modified}
             </Badge>
           </ModalFooter>

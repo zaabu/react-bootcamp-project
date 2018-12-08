@@ -4,7 +4,7 @@ import { AvForm, AvField } from "availity-reactstrap-validation";
 import { Link } from "react-router-dom";
 
 const SignupForm = props => (
-  
+  <div class="form-container">
   <div className="signup-form">
         <AvForm className="form" onValidSubmit={props.submit}>
         
@@ -72,6 +72,7 @@ const SignupForm = props => (
           </div>
 
         </AvForm>
+      </div>
       </div>
 );
 

@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "../../assets/entryAssets/entrypage.scss";
 import { clearToken } from "../../utils/myHeaders";
+// import "../assets/navbar.scss";
 
 import {
     Button,
@@ -12,8 +13,15 @@ import {
     Modal,
     ModalHeader,
     ModalBody,
-    ModalFooter
+    ModalFooter,
+    Collapse,
+    Navbar,
+    NavbarToggler,
+    NavbarBrand,
+    Nav,
 } from "reactstrap";
+
+
 
 const CreateEntryView = ({
     toggle,
@@ -26,14 +34,31 @@ const CreateEntryView = ({
 }) => {
     return (
         <div>
-            <a target="_blank" >
-                <Button className="user-button" onClick={toggle}>
-                    Create
-                </Button>
-                <Button className="user-button2" href="/" onClick={() => clearToken()}>
-                    Log Out
-                </Button>
-            </a>
+            
+            <Navbar light expand="md" id="mynav">
+                    <NavbarBrand href="/" id="navbar-brand">
+                        MY DIARY
+                    </NavbarBrand>
+                    <NavbarToggler  />
+                    <Collapse  navbar >
+                    <Nav className="ml-auto" navbar>
+                    <ul className="navbar-nav">
+                        
+                        <a target="_blank" >
+                        <Button className="user-button" onClick={toggle}>
+                            Create
+                        </Button>
+                        <Button className="user-button2" href="/" onClick={() => clearToken()}>
+                            Log Out
+                        </Button>
+                        </a>
+                        
+                        
+                    </ul>
+
+                    </Nav>
+                    </Collapse>
+            </Navbar>
             <Modal isOpen={modal} toggle={toggle} className={classname}>
                 <ModalHeader toggle={toggle}>Create New Entry</ModalHeader>
                 <ModalBody>

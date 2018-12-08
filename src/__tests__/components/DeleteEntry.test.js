@@ -5,6 +5,7 @@ import  DeleteEntryConfirm  from "../../components/entries/deleteDiaryEntry";
 import Adapter from "enzyme-adapter-react-16";
 configure({ adapter: new Adapter() });
 
+
 describe("SignupUser component", () => {
   const props = {
     handleDelete: jest.fn(),
