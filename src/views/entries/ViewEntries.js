@@ -5,6 +5,7 @@ import DeleteEntryConfirm from "../../components/entries/deleteDiaryEntry";
 import EditEntryModal from "../../components/entries/editDiaryEntry"
 import ViewEntry from "../../components/entries/viewDiary";
 
+
 const Viewallentries = ({ results, handleDelete }) => {
   const showEntries = results.map(entry => (
     entriesView(entry, handleDelete)
@@ -12,7 +13,6 @@ const Viewallentries = ({ results, handleDelete }) => {
 
   return (
     <div>
-
       <br />
       <div className="pic-container">{showEntries}</div>
     </div>

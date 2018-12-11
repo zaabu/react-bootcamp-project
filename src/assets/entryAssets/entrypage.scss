@@ -18,7 +18,7 @@
     flex-flow: column wrap;
     max-height: 800px;
     margin-left: 11%; /* Adjustment for the gutter */
-  
+    margin-top:100px;
 }
 
 
@@ -167,7 +167,9 @@
 
   .entry-date {
     color: #fff;
-    background-color: #8A908A;
+    // background-color: #8A908A;
+    background-color: purple;
+    border-color: rgba(85, 0, 100, 0.7);
     border-radius: 7px;
     padding-left: 10px;
     padding-right: 10px;
@@ -236,14 +238,19 @@
   }
 
   .user-button {
-    margin-left: 73%;
     margin-right:5px;
     border-radius:5px;
-    background-color: #464956;
+    background-color: purple;
+    border-color: rgba(85, 0, 100, 0.7);
+    text-transform: uppercase;
+    font-weight: 900;
   }
   .user-button2 {
     border-radius: 5px;
-    background-color: #464956;
+    background-color: purple;
+    border-color: rgba(85, 0, 100, 0.7);
+    text-transform: uppercase;
+    font-weight: 900;
     
   }
 
@@ -286,9 +293,45 @@
   }
 
   .pull-right {
-    background: #111;
     border-radius: 7px;
+    background-color: purple;
+    border-color: rgba(85, 0, 100, 0.7);
   }
+
+  $primary-colour: rgba(119, 20, 137, 0.7);
+.navbar img {
+  border-radius: 20% !important;
+  height: 1cm !important;
+  width: 1cm !important;
+  color: $primary-colour !important;
+}
+.navbar {
+//   margin-right: 5rem;
+  width: 100%;
+}
+.navbar-brand {
+  font-size: 15px !important;
+  font-weight: bold;
+  padding-top: 0cm !important;
+}
+
+#navv-link {
+    color:#fff;
+    font-weight: 800;
+  }
+  
+  #navbar-brand {
+    color:#fff;
+    font-size: 20px !important;
+  }
+  
+  #mynav {
+    background-color: purple;
+    border-color: rgba(85, 0, 100, 0.7);
+    position: fixed;
+    z-index: 2;
+  }
+  
 
 
 

@@ -37,7 +37,7 @@ export class ViewEntries extends Component {
     
     return (
       <div>
-        <h1 class="title d-inline">MY DIARY</h1>
+        {/* <h1 class="title d-inline">MY DIARY</h1> */}
        
         
         <CreateDiaryEntryComponent />
