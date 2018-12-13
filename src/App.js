@@ -2,7 +2,6 @@ import React, { Component,Fragment } from "react";
 import AppRoutes from "./routes";
 import { Provider } from "react-redux";
 import store from "./store/";
-import "./assets/App.scss";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
 

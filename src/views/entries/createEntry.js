@@ -34,14 +34,7 @@ const CreateEntryView = ({
 }) => {
     return (
         <div>
-            {/* <a target="_blank" >
-                <Button className="user-button" onClick={toggle}>
-                    Create
-                </Button>
-                <Button className="user-button2" href="/" onClick={() => clearToken()}>
-                    Log Out
-                </Button>
-            </a> */}
+            
             <Navbar light expand="md" id="mynav">
                     <NavbarBrand href="/" id="navbar-brand">
                         MY DIARY

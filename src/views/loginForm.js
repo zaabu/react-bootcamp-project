@@ -6,7 +6,7 @@ import "../assets/form.scss"
 
 
 const LoginForm = props => (
- 
+  <div class="form-container">
   <div className="signup-form">
       
       <AvForm onValidSubmit={props.submit}>
@@ -46,6 +46,7 @@ const LoginForm = props => (
       </AvForm>
 
     
+    </div>
     </div>
 );
 

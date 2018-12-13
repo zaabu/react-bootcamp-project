@@ -19,6 +19,7 @@
     max-height: 800px;
     margin-left: 11%; /* Adjustment for the gutter */
     margin-top:100px;
+    
 }
 
 
@@ -270,6 +271,8 @@
     border-radius: 7px;
     padding-top:2px;
     padding-bottom: 2px;
+    background-color: #28a745;
+    border-color: #28a745;
   }
 
   #danger-button {
@@ -297,7 +300,6 @@
     background-color: purple;
     border-color: rgba(85, 0, 100, 0.7);
   }
-
   $primary-colour: rgba(119, 20, 137, 0.7);
 .navbar img {
   border-radius: 20% !important;

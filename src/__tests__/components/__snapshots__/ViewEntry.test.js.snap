@@ -91,8 +91,8 @@ ShallowWrapper {
             tag="div"
           >
             <Badge
-              className="float-left"
-              color="warning"
+              className="pull-right float-left"
+              color="secondary"
               pill={false}
               tag="span"
             >
@@ -101,8 +101,8 @@ ShallowWrapper {
             </Badge>
              
             <Badge
-              className="float-left"
-              color="info"
+              className="pull-right float-left"
+              color="secondary"
               pill={false}
               tag="span"
             >
@@ -164,8 +164,8 @@ ShallowWrapper {
               tag="div"
             >
               <Badge
-                className="float-left"
-                color="warning"
+                className="pull-right float-left"
+                color="secondary"
                 pill={false}
                 tag="span"
               >
@@ -174,8 +174,8 @@ ShallowWrapper {
               </Badge>
                
               <Badge
-                className="float-left"
-                color="info"
+                className="pull-right float-left"
+                color="secondary"
                 pill={false}
                 tag="span"
               >
@@ -239,8 +239,8 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <Badge
-                  className="float-left"
-                  color="warning"
+                  className="pull-right float-left"
+                  color="secondary"
                   pill={false}
                   tag="span"
                 >
@@ -249,8 +249,8 @@ ShallowWrapper {
                 </Badge>,
                 " ",
                 <Badge
-                  className="float-left"
-                  color="info"
+                  className="pull-right float-left"
+                  color="secondary"
                   pill={false}
                   tag="span"
                 >
@@ -270,8 +270,8 @@ ShallowWrapper {
                     "Date Created - ",
                     "",
                   ],
-                  "className": "float-left",
-                  "color": "warning",
+                  "className": "pull-right float-left",
+                  "color": "secondary",
                   "pill": false,
                   "tag": "span",
                 },
@@ -292,8 +292,8 @@ ShallowWrapper {
                     "Last Modified - ",
                     undefined,
                   ],
-                  "className": "float-left",
-                  "color": "info",
+                  "className": "pull-right float-left",
+                  "color": "secondary",
                   "pill": false,
                   "tag": "span",
                 },
@@ -375,8 +375,8 @@ ShallowWrapper {
               tag="div"
             >
               <Badge
-                className="float-left"
-                color="warning"
+                className="pull-right float-left"
+                color="secondary"
                 pill={false}
                 tag="span"
               >
@@ -385,8 +385,8 @@ ShallowWrapper {
               </Badge>
                
               <Badge
-                className="float-left"
-                color="info"
+                className="pull-right float-left"
+                color="secondary"
                 pill={false}
                 tag="span"
               >
@@ -448,8 +448,8 @@ ShallowWrapper {
                 tag="div"
               >
                 <Badge
-                  className="float-left"
-                  color="warning"
+                  className="pull-right float-left"
+                  color="secondary"
                   pill={false}
                   tag="span"
                 >
@@ -458,8 +458,8 @@ ShallowWrapper {
                 </Badge>
                  
                 <Badge
-                  className="float-left"
-                  color="info"
+                  className="pull-right float-left"
+                  color="secondary"
                   pill={false}
                   tag="span"
                 >
@@ -523,8 +523,8 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <Badge
-                    className="float-left"
-                    color="warning"
+                    className="pull-right float-left"
+                    color="secondary"
                     pill={false}
                     tag="span"
                   >
@@ -533,8 +533,8 @@ ShallowWrapper {
                   </Badge>,
                   " ",
                   <Badge
-                    className="float-left"
-                    color="info"
+                    className="pull-right float-left"
+                    color="secondary"
                     pill={false}
                     tag="span"
                   >
@@ -554,8 +554,8 @@ ShallowWrapper {
                       "Date Created - ",
                       "",
                     ],
-                    "className": "float-left",
-                    "color": "warning",
+                    "className": "pull-right float-left",
+                    "color": "secondary",
                     "pill": false,
                     "tag": "span",
                   },
@@ -576,8 +576,8 @@ ShallowWrapper {
                       "Last Modified - ",
                       undefined,
                     ],
-                    "className": "float-left",
-                    "color": "info",
+                    "className": "pull-right float-left",
+                    "color": "secondary",
                     "pill": false,
                     "tag": "span",
                   },
